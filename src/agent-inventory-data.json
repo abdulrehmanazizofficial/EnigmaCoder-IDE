@@ -1,0 +1,936 @@
+[
+  {
+    "id": "product",
+    "name": "Product",
+    "mission": "Turn user outcomes into scoped, measurable product work.",
+    "head": {
+      "id": "product-director",
+      "name": "Product Director Agent",
+      "responsibility": "Product strategy and requirements"
+    },
+    "specialistCount": 7,
+    "specialists": [
+      {
+        "id": "product-manager",
+        "name": "Product Manager Agent",
+        "responsibility": "Product vision, user stories, and feature prioritization",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "business-analyst",
+        "name": "Business Analyst Agent",
+        "responsibility": "Stakeholders and use cases",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "requirements-engineer",
+        "name": "Requirements Engineer Agent",
+        "responsibility": "Requirements and acceptance criteria",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "user-story-writer",
+        "name": "User Story Writer Agent",
+        "responsibility": "Stories and edge cases",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "scope-analyzer",
+        "name": "Scope Analyzer Agent",
+        "responsibility": "MVP boundaries and dependencies",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "roadmap-planner",
+        "name": "Roadmap Planner Agent",
+        "responsibility": "Milestones and sequencing",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "pricing-planner",
+        "name": "Pricing Planner Agent",
+        "responsibility": "Pricing and packaging estimates",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      }
+    ]
+  },
+  {
+    "id": "architecture",
+    "name": "Architecture",
+    "mission": "Define coherent technical boundaries and design decisions.",
+    "head": {
+      "id": "chief-architect",
+      "name": "Chief Architect Agent",
+      "responsibility": "System-wide technical decisions"
+    },
+    "specialistCount": 8,
+    "specialists": [
+      {
+        "id": "solution-architect",
+        "name": "Solution Architect Agent",
+        "responsibility": "System design",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "frontend-architect",
+        "name": "Frontend Architect Agent",
+        "responsibility": "Frontend structure",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "backend-architect",
+        "name": "Backend Architect Agent",
+        "responsibility": "Backend boundaries",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "database-architect",
+        "name": "Database Architect Agent",
+        "responsibility": "Data architecture",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "cloud-architect",
+        "name": "Cloud Architect Agent",
+        "responsibility": "Infrastructure architecture",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "ai-architect",
+        "name": "AI Architect Agent",
+        "responsibility": "AI system design and model selection",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "security-architect",
+        "name": "Security Architect Agent",
+        "responsibility": "Security boundaries",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "integration-architect",
+        "name": "Integration Architect Agent",
+        "responsibility": "Integration design",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "frontend",
+    "name": "Frontend",
+    "mission": "Build accessible, testable user interfaces and experiences.",
+    "head": {
+      "id": "frontend-director",
+      "name": "Frontend Director Agent",
+      "responsibility": "Frontend delivery and quality"
+    },
+    "specialistCount": 11,
+    "specialists": [
+      {
+        "id": "frontend-engineer",
+        "name": "Frontend Engineer Specialist",
+        "responsibility": "UI components, layouts, state management, and accessibility",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "nextjs-specialist",
+        "name": "Next.js Specialist Agent",
+        "responsibility": "Next.js implementation",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "react-specialist",
+        "name": "React Specialist Agent",
+        "responsibility": "React components and state",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "ui-component-engineer",
+        "name": "UI Component Engineer Agent",
+        "responsibility": "Reusable UI components",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "dashboard-developer",
+        "name": "Dashboard Developer Agent",
+        "responsibility": "Operational dashboards",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "landing-page-developer",
+        "name": "Landing Page Developer Agent",
+        "responsibility": "Product pages",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "forms-specialist",
+        "name": "Forms Specialist Agent",
+        "responsibility": "Forms and validation",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "charts-specialist",
+        "name": "Charts and Data Visualization Specialist",
+        "responsibility": "Charts and visualization",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "theme-specialist",
+        "name": "Theme and Design System Specialist",
+        "responsibility": "Design systems",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "animation-specialist",
+        "name": "Animation Specialist Agent",
+        "responsibility": "Interaction animation",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "accessibility-specialist",
+        "name": "Accessibility Specialist Agent",
+        "responsibility": "Accessibility",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "backend",
+    "name": "Backend",
+    "mission": "Deliver reliable services, APIs, jobs, and realtime behavior.",
+    "head": {
+      "id": "backend-director",
+      "name": "Backend Director Agent",
+      "responsibility": "Backend delivery and runtime"
+    },
+    "specialistCount": 11,
+    "specialists": [
+      {
+        "id": "backend-engineer",
+        "name": "Backend Engineer Specialist",
+        "responsibility": "API contracts, business logic services, and domain error handling",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "api-engineer",
+        "name": "API Engineer Agent",
+        "responsibility": "API contracts",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "business-logic-engineer",
+        "name": "Business Logic Engineer Agent",
+        "responsibility": "Domain services",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "server-actions-specialist",
+        "name": "Server Actions Specialist Agent",
+        "responsibility": "Server actions",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "queue-job-engineer",
+        "name": "Queue and Job Engineer Agent",
+        "responsibility": "Queues and jobs",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "scheduler-engineer",
+        "name": "Scheduler Engineer Agent",
+        "responsibility": "Scheduled execution",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "websocket-specialist",
+        "name": "WebSocket Specialist Agent",
+        "responsibility": "Realtime communication",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "caching-specialist",
+        "name": "Caching Specialist Agent",
+        "responsibility": "Caching",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "search-specialist",
+        "name": "Search Specialist Agent",
+        "responsibility": "Search",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "validation-engineer",
+        "name": "Validation Engineer Agent",
+        "responsibility": "Validation",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "middleware-engineer",
+        "name": "Middleware Engineer Agent",
+        "responsibility": "Middleware",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "database",
+    "name": "Database",
+    "mission": "Design durable data models, migrations, queries, and storage.",
+    "head": {
+      "id": "database-director",
+      "name": "Database Director Agent",
+      "responsibility": "Persistence and schema quality"
+    },
+    "specialistCount": 9,
+    "specialists": [
+      {
+        "id": "database-engineer",
+        "name": "Database Engineer Specialist",
+        "responsibility": "Database schemas, indexes, SQL migrations, and query optimization",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "postgresql-specialist",
+        "name": "PostgreSQL Specialist Agent",
+        "responsibility": "PostgreSQL",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "supabase-specialist",
+        "name": "Supabase Specialist Agent",
+        "responsibility": "Supabase",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "schema-designer",
+        "name": "Schema Designer Agent",
+        "responsibility": "Data modeling",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "migration-engineer",
+        "name": "Migration Engineer Agent",
+        "responsibility": "Migrations",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "query-optimizer",
+        "name": "Query Optimizer Agent",
+        "responsibility": "Query performance",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "index-engineer",
+        "name": "Index Engineer Agent",
+        "responsibility": "Indexes",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "backup-specialist",
+        "name": "Backup Specialist Agent",
+        "responsibility": "Backup and recovery",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "storage-specialist",
+        "name": "Storage Specialist Agent",
+        "responsibility": "Storage",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "ai-integrations",
+    "name": "AI & Integrations",
+    "mission": "Connect AI providers and external systems through verified interfaces.",
+    "head": {
+      "id": "ai-integrations-director",
+      "name": "AI & Integrations Director Agent",
+      "responsibility": "Providers and connectors"
+    },
+    "specialistCount": 15,
+    "specialists": [
+      {
+        "id": "ai-engineer",
+        "name": "AI Engineer Agent",
+        "responsibility": "AI features and prompt engineering",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "machine-learning-engineer",
+        "name": "Machine Learning Engineer Specialist",
+        "responsibility": "ML pipelines, training workflows, and model serving",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "ai-research-agent",
+        "name": "AI Research Specialist Agent",
+        "responsibility": "AI/ML paper reviews, techniques, and benchmarks",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "automation-builder",
+        "name": "AI Automation Specialist Agent",
+        "responsibility": "Automation",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "stripe-integration",
+        "name": "Stripe Integration Specialist",
+        "responsibility": "Stripe planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "clerk-integration",
+        "name": "Clerk Integration Specialist",
+        "responsibility": "Clerk planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "resend-integration",
+        "name": "Resend Integration Specialist",
+        "responsibility": "Email provider",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "openai-integration",
+        "name": "OpenAI Integration Specialist",
+        "responsibility": "OpenAI API",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "github-integration",
+        "name": "GitHub Integration Specialist",
+        "responsibility": "GitHub API",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "anthropic-integration",
+        "name": "Anthropic Integration Specialist",
+        "responsibility": "Anthropic API",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "gemini-integration",
+        "name": "Gemini Integration Specialist",
+        "responsibility": "Gemini API",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "n8n-integration",
+        "name": "n8n Integration Specialist",
+        "responsibility": "n8n planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "webhook-specialist",
+        "name": "Webhook Specialist",
+        "responsibility": "Webhooks",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "slack-integration",
+        "name": "Slack Integration Specialist",
+        "responsibility": "Slack planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "discord-integration",
+        "name": "Discord Integration Specialist",
+        "responsibility": "Discord planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "security",
+    "name": "Security",
+    "mission": "Protect identity, authorization, secrets, and operational trust.",
+    "head": {
+      "id": "chief-security",
+      "name": "Chief Security Agent",
+      "responsibility": "Security governance"
+    },
+    "specialistCount": 8,
+    "specialists": [
+      {
+        "id": "security-engineer",
+        "name": "Security Engineer Specialist",
+        "responsibility": "Application security, auth governance, secrets review, and dependency risks",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "authentication-engineer",
+        "name": "Authentication Engineer Agent",
+        "responsibility": "Authentication",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "authorization-engineer",
+        "name": "Authorization Engineer Agent",
+        "responsibility": "Authorization",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "rate-limiting-specialist",
+        "name": "Rate Limiting Specialist",
+        "responsibility": "Rate limits",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "security-scanner",
+        "name": "Security Scanner Agent",
+        "responsibility": "Security scanning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "secrets-manager",
+        "name": "Secrets Manager Specialist",
+        "responsibility": "Secrets",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "audit-log-engineer",
+        "name": "Audit Log Engineer",
+        "responsibility": "Audit logs",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "compliance-specialist",
+        "name": "Compliance Specialist",
+        "responsibility": "Compliance mapping",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "qa-devops",
+    "name": "QA & DevOps",
+    "mission": "Verify quality and operate repeatable builds, tests, and releases.",
+    "head": {
+      "id": "quality-infrastructure-director",
+      "name": "Quality & Infrastructure Director Agent",
+      "responsibility": "Testing and releases"
+    },
+    "specialistCount": 15,
+    "specialists": [
+      {
+        "id": "qa-test-automation-agent",
+        "name": "QA & Test Automation Specialist",
+        "responsibility": "Unit, integration, and E2E automated test execution",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "devops-infrastructure-agent",
+        "name": "DevOps & Infrastructure Specialist",
+        "responsibility": "Build pipelines, container configs, and deployment checks",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "qa-lead",
+        "name": "QA Lead Agent",
+        "responsibility": "Test strategy",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "unit-testing-specialist",
+        "name": "Unit Testing Specialist",
+        "responsibility": "Unit tests",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "integration-testing-specialist",
+        "name": "Integration Testing Specialist",
+        "responsibility": "Integration tests",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "e2e-testing-specialist",
+        "name": "End-to-End Testing Specialist",
+        "responsibility": "E2E tests",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "performance-testing-specialist",
+        "name": "Performance Testing Specialist",
+        "responsibility": "Performance",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "docker-specialist",
+        "name": "Docker Specialist",
+        "responsibility": "Docker",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "vercel-deployment-specialist",
+        "name": "Vercel Deployment Specialist",
+        "responsibility": "Vercel planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "aws-specialist",
+        "name": "AWS Specialist",
+        "responsibility": "AWS planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "cloudflare-specialist",
+        "name": "Cloudflare Specialist",
+        "responsibility": "Cloudflare planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "cicd-engineer",
+        "name": "CI/CD Engineer",
+        "responsibility": "CI/CD",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "domain-dns-specialist",
+        "name": "Domain and DNS Specialist",
+        "responsibility": "DNS planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "ssl-specialist",
+        "name": "SSL Specialist",
+        "responsibility": "TLS planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "release-engineer",
+        "name": "Release Engineer",
+        "responsibility": "Releases",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "documentation",
+    "name": "Documentation",
+    "mission": "Produce accurate, maintainable product and technical documentation.",
+    "head": {
+      "id": "documentation-director",
+      "name": "Documentation Director Agent",
+      "responsibility": "Verified documentation"
+    },
+    "specialistCount": 6,
+    "specialists": [
+      {
+        "id": "technical-documentation-agent",
+        "name": "Technical Documentation Specialist",
+        "responsibility": "Architecture docs, API specs, and release notes",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "user-guide-writer",
+        "name": "User Guide Writer",
+        "responsibility": "User guides",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "changelog-writer",
+        "name": "Changelog Writer",
+        "responsibility": "Changelogs",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "api-documentation",
+        "name": "API Documentation Specialist",
+        "responsibility": "API docs",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "release-notes-writer",
+        "name": "Release Notes Writer",
+        "responsibility": "Release notes",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "technical-documentation",
+        "name": "Technical Documentation Specialist Base",
+        "responsibility": "Technical docs",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  },
+  {
+    "id": "business",
+    "name": "Business",
+    "mission": "Shape business workflows, communication, billing, and growth needs.",
+    "head": {
+      "id": "business-director",
+      "name": "Business Director Agent",
+      "responsibility": "Business workflows"
+    },
+    "specialistCount": 14,
+    "specialists": [
+      {
+        "id": "marketing-strategist-agent",
+        "name": "Marketing Strategist Agent",
+        "responsibility": "Marketing positioning, campaign briefs, and launch strategies",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "growth-marketing-agent",
+        "name": "Growth Marketing Agent",
+        "responsibility": "Acquisition, activation, retention, and funnel optimization",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "content-strategist-agent",
+        "name": "Content Strategist Agent",
+        "responsibility": "Editorial calendars, topic clusters, and distribution briefs",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "social-media-manager-agent",
+        "name": "Social Media Manager Agent",
+        "responsibility": "Platform content plans, draft posts, and campaign timing",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "brand-creative-strategist",
+        "name": "Brand & Creative Strategist Agent",
+        "responsibility": "Brand guidelines, creative briefs, and visual identity",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "product-marketing-agent",
+        "name": "Product Marketing Agent",
+        "responsibility": "Product positioning, launch messaging, and audience segmenting",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "customer-support-dx-agent",
+        "name": "Customer Support & DX Agent",
+        "responsibility": "User-reported issues, DX friction analysis, and support guides",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "bizops-finance-analyst",
+        "name": "BizOps & Finance Analyst Agent",
+        "responsibility": "Cost modeling, unit economics, and operational budgets",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "seo-specialist",
+        "name": "SEO Specialist",
+        "responsibility": "SEO keyword research and technical audit",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "email-notifications",
+        "name": "Email and Notifications Specialist",
+        "responsibility": "Notifications",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "crm-specialist",
+        "name": "CRM Specialist",
+        "responsibility": "CRM planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "marketing-specialist",
+        "name": "Marketing Specialist",
+        "responsibility": "Marketing planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "billing-specialist",
+        "name": "Billing Specialist",
+        "responsibility": "Billing planning",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "subscription-manager",
+        "name": "Subscription Manager",
+        "responsibility": "Subscriptions",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      }
+    ]
+  },
+  {
+    "id": "research",
+    "name": "Research & Intelligence",
+    "mission": "Generate evidence-backed analysis and product intelligence.",
+    "head": {
+      "id": "research-director",
+      "name": "Research Director Agent",
+      "responsibility": "Evidence-based research"
+    },
+    "specialistCount": 9,
+    "specialists": [
+      {
+        "id": "competitive-intelligence-agent",
+        "name": "Competitive Intelligence Specialist",
+        "responsibility": "Competitor analysis, pricing comparisons, and feature matrices",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "data-engineer-agent",
+        "name": "Data Engineer Specialist",
+        "responsibility": "Data ingestion pipelines, storage schemas, and data quality checks",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "business-intelligence-agent",
+        "name": "Business Intelligence Specialist",
+        "responsibility": "KPI definitions, cohort analysis, and executive dashboards",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "customer-research-agent",
+        "name": "Customer Research Specialist",
+        "responsibility": "User interview guides, survey analysis, and customer journey maps",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "data-scientist",
+        "name": "Data Scientist Agent",
+        "responsibility": "Data analysis and statistical modeling",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "market-research",
+        "name": "Market Research Specialist",
+        "responsibility": "Market size, customer needs, and industry trends",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      },
+      {
+        "id": "gap-finder",
+        "name": "Gap Finder",
+        "responsibility": "Product gaps",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "data-analyst",
+        "name": "Data Analyst",
+        "responsibility": "Data analysis",
+        "tools": "workspace_read, conversation_events",
+        "profile": "read_only"
+      },
+      {
+        "id": "product-improvement",
+        "name": "Product Improvement Specialist",
+        "responsibility": "Product improvement",
+        "tools": "workspace_read, workspace_write, terminal_execute, conversation_events",
+        "profile": "workspace_editor"
+      }
+    ]
+  }
+]
