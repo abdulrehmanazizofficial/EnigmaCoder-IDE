@@ -1,0 +1,51 @@
+{
+  "name": "EnigmaCoder",
+  "description": "AI-native engineering IDE that unites project context, code editing, terminal execution, and multi-agent coordination for Windows.",
+  "url": "https://www.enigmacoder.dev/",
+  "version": "1.20.0",
+  "category": "DeveloperTool",
+  "operatingSystem": ["Windows 10", "Windows 11"],
+  "license": "Proprietary",
+  "author": {
+    "name": "Abdul Rehman Aziz Khan",
+    "url": "https://www.linkedin.com/in/abdul-rehman-aziz-khan-b3aab9402/"
+  },
+  "organization": {
+    "name": "EnigmaCoder",
+    "url": "https://www.enigmacoder.dev/",
+    "community": "https://discord.gg/rNVZYwzJY"
+  },
+  "resources": [
+    {
+      "type": "homepage",
+      "url": "https://www.enigmacoder.dev/",
+      "description": "EnigmaCoder official website"
+    },
+    {
+      "type": "download",
+      "url": "https://www.enigmacoder.dev/download",
+      "description": "Download EnigmaCoder IDE for Windows"
+    },
+    {
+      "type": "documentation",
+      "url": "https://www.enigmacoder.dev/product",
+      "description": "Product features and capabilities"
+    },
+    {
+      "type": "model",
+      "url": "https://huggingface.co/enigmacoder/EnigmaCoder-2B",
+      "description": "EnigmaCoder 2B open model on Hugging Face"
+    },
+    {
+      "type": "agents",
+      "url": "https://www.enigmacoder.dev/agents",
+      "description": "124 specialist AI agents across 11 engineering departments"
+    },
+    {
+      "type": "community",
+      "url": "https://discord.gg/rNVZYwzJY",
+      "description": "EnigmaCoder Discord community"
+    }
+  ],
+  "llmsTxt": "https://www.enigmacoder.dev/llms.txt"
+}

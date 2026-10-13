@@ -75,7 +75,7 @@ function Header({ currentPath, navigate }: { currentPath: string; navigate: (to:
     <header className="nav">
       <div className="wrap">
         <a className="brand" href="/" onClick={(e) => { e.preventDefault(); navigate("/"); }}>
-          <img src="/logo.png" alt="EnigmaCoder Logo" />
+          <picture><source srcSet="/logo.webp" type="image/webp" /><img src="/logo.png" alt="EnigmaCoder Logo" width="60" height="40" fetchpriority="high" /></picture>
           <span>EnigmaCoder</span>
         </a>
         <nav className="links" aria-label="Primary">
@@ -148,7 +148,7 @@ function HeroAppRecreation() {
         <div className="ag">
           <aside className="sb">
             <div className="sbh">
-              <img src="/logo.png" alt="EnigmaCoder Logo" />
+              <picture><source srcSet="/logo.webp" type="image/webp" /><img src="/logo.png" alt="EnigmaCoder Logo" width="60" height="40" fetchpriority="high" /></picture>
               <b>EnigmaCoder</b>
               <em className="ib">IDE</em>
             </div>
@@ -190,7 +190,7 @@ function HeroAppRecreation() {
 
           <section className="mn">
             <div className="ttl">
-              <img src="/logo.png" alt="EnigmaCoder Logo" />
+              <picture><source srcSet="/logo.webp" type="image/webp" /><img src="/logo.png" alt="EnigmaCoder Logo" width="60" height="40" fetchpriority="high" /></picture>
               <h3>EnigmaCoder IDE</h3>
             </div>
             <p className="subt">
@@ -1489,7 +1489,7 @@ function Footer({ navigate }: { navigate: (to: string) => void }) {
       <div className="wrap">
         <div>
           <a className="brand" href="/" onClick={(e) => { e.preventDefault(); navigate("/"); }}>
-            <img src="/logo.png" alt="EnigmaCoder Logo" />
+            <picture><source srcSet="/logo.webp" type="image/webp" /><img src="/logo.png" alt="EnigmaCoder Logo" width="60" height="40" fetchpriority="high" /></picture>
             <span>EnigmaCoder</span>
           </a>
           <p style={{ marginTop: 10 }}>
