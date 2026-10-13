@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /sign-in
 
-Sitemap: https://enigmacoder.dev/sitemap.xml
+Sitemap: https://www.enigmacoder.dev/sitemap.xml
